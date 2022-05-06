@@ -22,37 +22,37 @@ func (i *Uint64) ToInt() Int {
 	return Int(*i)
 }
 
-// Greater checks if uint64 is greater than other.
+// Greater checks if uint64 is greater than others.
 func (i *Uint64) Greater(other Uint64) bool {
 	return *i > other
 }
 
-// GreaterEqual checks if uint64 is greater than or equal to other.
+// GreaterEqual checks if uint64 is greater than or equal to others.
 func (i *Uint64) GreaterEqual(other Uint64) bool {
 	return *i >= other
 }
 
-// Fewer checks if uint64 is lesser than other.
+// Fewer checks if uint64 is lesser than others.
 func (i *Uint64) Fewer(other Uint64) bool {
 	return *i < other
 }
 
-// FewerEqual checks if uint64 is lesser than or equal to other.
+// FewerEqual checks if uint64 is lesser than or equal to others.
 func (i *Uint64) FewerEqual(other Uint64) bool {
 	return *i <= other
 }
 
-// Equal checks if uint64 is equal to other.
+// Equal checks if uint64 is equal to others.
 func (i *Uint64) Equal(other Uint64) bool {
 	return *i == other
 }
 
-// NotEqual checks if uint64 is not equal to other.
+// NotEqual checks if uint64 is not equal to others.
 func (i *Uint64) NotEqual(other Uint64) bool {
 	return *i != other
 }
 
-// Add adds uint64 to other.
+// Add adds uint64 to others.
 func (i *Uint64) Add(other Uint64) Uint64 {
 	return *i + other
 }
@@ -62,12 +62,12 @@ func (i *Uint64) Sub(other Uint64) Uint64 {
 	return *i - other
 }
 
-// Mul multiplies uint64 by other.
+// Mul multiplies uint64 by others.
 func (i *Uint64) Mul(other Uint64) Uint64 {
 	return *i * other
 }
 
-// Div divides uint64 by other.
+// Div divides uint64 by others.
 func (i *Uint64) Div(other Uint64) Uint64 {
 	if other == 0 {
 		return *i
@@ -75,7 +75,7 @@ func (i *Uint64) Div(other Uint64) Uint64 {
 	return *i / other
 }
 
-// Max returns the greater of uint64 and other.
+// Max returns the greatest of uint64 and other.
 func (i *Uint64) Max(other Uint64) Uint64 {
 	if *i > other {
 		return *i
@@ -83,7 +83,7 @@ func (i *Uint64) Max(other Uint64) Uint64 {
 	return other
 }
 
-// Min returns the lesser of uint64 and other.
+// Min returns the least of uint64 and other.
 func (i *Uint64) Min(other Uint64) Uint64 {
 	if *i < other {
 		return *i
@@ -101,7 +101,7 @@ func (i *Uint64) Cube() Uint64 {
 	return *i * *i * *i
 }
 
-// Mod returns the remainder of uint64 divided by other.
+// Mod returns the remainder of uint64 divided by others.
 func (i *Uint64) Mod(other Uint64) Uint64 {
 	if other == 0 {
 		return *i
@@ -109,7 +109,7 @@ func (i *Uint64) Mod(other Uint64) Uint64 {
 	return *i % other
 }
 
-// Pow returns the uint64 to the power of other.
+// Pow returns the uint64 to the power of others.
 func (i *Uint64) Pow(other Uint64) Uint64 {
 	return Uint64(math.Pow(float64(*i), float64(other)))
 }
@@ -137,12 +137,12 @@ func (i *Uint64) Neg() Uint64 {
 	return -*i
 }
 
-// Lsh returns the uint64 left shifted by other.
+// Lsh returns the uint64 left shifted by others.
 func (i *Uint64) Lsh(other Uint64) Uint64 {
 	return *i << other
 }
 
-// Rsh returns the uint64 right shifted by other.
+// Rsh returns the uint64 right shifted by others.
 func (i *Uint64) Rsh(other Uint64) Uint64 {
 	return *i >> other
 }

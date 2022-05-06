@@ -24,22 +24,22 @@ func (i *Uint8) ToUint() uint {
 	return uint(*i)
 }
 
-// Greater returns true if i is greater than other
+// Greater returns true if 'i' is greater than other
 func (i *Uint8) Greater(other Uint8) bool {
 	return *i > other
 }
 
-// GreaterEqual returns true if i is greater than or equal to other
+// GreaterEqual returns true if 'i' is greater than or equal to other
 func (i *Uint8) GreaterEqual(other Uint8) bool {
 	return *i >= other
 }
 
-// Fewer returns true if i is fewer than other
+// Fewer returns true if 'i' is fewer than other
 func (i *Uint8) Fewer(other Uint8) bool {
 	return *i < other
 }
 
-// FewerEqual returns true if i is fewer than or equal to other
+// FewerEqual returns true if 'i' is fewer than or equal to other
 func (i *Uint8) FewerEqual(other Uint8) bool {
 	return *i <= other
 }
@@ -49,7 +49,7 @@ func (i *Uint8) Equal(other Uint8) bool {
 	return *i == other
 }
 
-// NotEqual returns true if i is not equal to other
+// NotEqual returns true if 'i' is not equal to other
 func (i *Uint8) NotEqual(other Uint8) bool {
 	return *i != other
 }
@@ -100,7 +100,7 @@ func (i *Uint8) Pow(other Uint8) Uint8 {
 	return Uint8(math.Pow(float64(*i), float64(other)))
 }
 
-// Max returns the greater of i and other
+// Max returns the greatest of i and other
 func (i *Uint8) Max(other Uint8) Uint8 {
 	if *i > other {
 		return *i
